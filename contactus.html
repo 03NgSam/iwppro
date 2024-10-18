@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us </title>
+    <link rel="stylesheet" href = "stylee.css">
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: linear-gradient(#f57b1ef4, #fff7f9);
+    }
+
+    .contact-container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .contact-left-title h2{
+        font-weight: 600;
+        color: #162938 ;
+        font-size: 40px;
+        margin-bottom 5px; ;
+
+    }
+
+    .contact-left-title hr{
+        border: none;
+        width: 200px;
+        height:5px;
+        background-color: #162938;
+    
+    }
+</style>
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">Craftopia</h2>
+       
+        <nav class="navigation" id="nav">
+            <a href="#" >Home</a>
+            <a href="#" >Explore</a> 
+            <a href="#" >Create</a>  
+            <a href="#" >Search</a> 
+            <button class="btnLogin-popup">Login</button>
+
+        </nav>
+    </header>
+    
+    <div class="contact-container">
+            <form action="" class="contact-left">
+               <div class="contact-left-title">
+                <h2>Get In Touch</h2>
+                <hr><br>
+               <p>We'd love to hear from you!</p>
+               </div>
+               <input type="text" name="name " placeholder="Your Name" class= "contact-input" required>
+               <input type="email"name="email" class="contact-input" placeholder="Your Email" required>
+               <textarea name ="message" placeholder="Your Message" class="contact-input" required></textarea>
+               <button type="submit"> Submit <ion-icon name="send"></ion-icon></button>
+           </form> 
+            <div class="contact-right">
+             <img src="feed.png" alt="contact-img" >
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-links">
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                
+            </div>
+            <br>
+            <div class="cop">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear()) </script>, Craftopia </p></div>
+        </footer>
+    
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+       
+
+       </body>
+       </html>
